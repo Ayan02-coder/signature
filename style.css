@@ -1,0 +1,89 @@
+* {
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	
+	text-align: center;
+	background-color: lightblue;
+}
+h1 {
+	margin: 60px 0px;
+	font-size: 50px;
+}
+
+marquee{
+	font-size: 20px;
+}
+#selector {
+	margin: 20px 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+}
+
+#selector .fontcolor {
+	width: 300px;
+	display: flex;
+	margin: 10px 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+input[type="color"], #font {
+	width: 100px;
+}
+#mycanvas {
+	width: 80%;
+	height: 500px;
+	border: 2px solid black;
+	background-color: white;
+	border-radius: 20px;
+	
+	
+}
+
+button {
+	margin: 20px 40px;
+	width: 300px;
+	height: 50px;
+	font-size: 25px;
+	border: none;
+	border-radius: 10px;
+}
+
+
+.btn:hover button:not(:hover) {
+	opacity: 0.4;
+}
+#clear {
+	background-color: red;
+	color: white;
+}
+
+#save {
+	background-color: green;
+	color: white;
+}
+
+#download {
+	background-color: blue;
+	color: white;
+}
+@media screen and (max-width: 800px){
+	#selector {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#mycanvas {
+		height: 300px;
+	}
+}
