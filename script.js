@@ -34,9 +34,8 @@ window.addEventListener('load', () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     });
 
-    document.getElementById('save').addEventListener('click', () => {
-        const dataUrl = canvas.toDataURL();
-        // Code to save dataUrl or display it as an image
+    document.getElementById("save").addEventListener('click', () => {
+        alert("This Feature will be added soon!");
     });
 
     document.getElementById('download').addEventListener('click', () => {
