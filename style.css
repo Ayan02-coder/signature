@@ -7,12 +7,38 @@
 body {
 	
 	text-align: center;
-	background-color: lightblue;
+	background-image: linear-gradient(whitesmoke,lightblue);
+}
+header{
+	
+	width: 100%;
+	height: 60px;
+	position: relative;
+	
+}
+.logo{
+	background-image: url("logo.png");
+	height: 100px;
+	width: 100px;
+	background-size: cover;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	
+}
+@media (max-width:600px){
+	header .logo{
+		height: 60px;
+		width: 60px;
+		background-size: cover;
+	}
 }
 h1 {
 	margin: 60px 0px;
 	font-size: 50px;
+	font-size: clamp(1rem, calc(1rem + 2.5vw),3rem);
 }
+
 
 marquee{
 	font-size: 20px;
@@ -37,6 +63,10 @@ marquee{
 
 input[type="color"], #font {
 	width: 100px;
+}
+
+label{
+	font-size: clamp(1rem, calc(1rem + 0.5vw),2rem);
 }
 #mycanvas {
 	width: 80%;
@@ -86,4 +116,10 @@ button {
 	#mycanvas {
 		height: 300px;
 	}
+}
+
+footer{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
